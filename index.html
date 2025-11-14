@@ -7,36 +7,43 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Corporate Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Corporate Poem Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic for the corporate poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div></div>
-    </main>
-    <footer>
-      This AI project was coded by Salwa Hayee and is
-      <a
-        href="https://github.com/salwa-hayee/corporate-poem-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://corporate-poem-generator.netlify.app/" target="_blank">
-        hosted on Netlify.</a
-      >
-    </footer>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a topic for the corporate poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="poem">
+          Every rose has it thorns
+          <br />
+          Just like every cowboy has his dawn
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by Salwa Hayee and is
+        <a
+          href="https://github.com/salwa-hayee/corporate-poem-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://corporate-poem-generator.netlify.app/" target="_blank">
+          hosted on Netlify.</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
