@@ -2,7 +2,7 @@ function generatePoem(event) {
   event.preventDefault();
 
   new Typewriter("#poem", {
-    strings: "La tombe dit à la rose",
+    strings: "Every deal has it's cost",
     autoStart: true,
     delay: 1,
     cursor: "",
