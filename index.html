@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter a topic for the corporate poem"
@@ -24,13 +25,7 @@
           />
           <input type="submit" class="button" />
         </form>
-        <div class="poem">
-          Every deal has its cost
-          <br />
-          Just like every deadline gets crossed
-          <br />
-          Just like every worker hums their burnt-out song
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This AI project was coded by Salwa Hayee and is
