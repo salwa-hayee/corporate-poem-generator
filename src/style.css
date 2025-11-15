@@ -1,6 +1,6 @@
 body {
   background-color: rgb(250, 240, 252);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .container {
   margin: 120px auto;
@@ -11,18 +11,29 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
-  color: #544787;
+  color: #361e71;
 }
 header {
   margin-bottom: 30px;
 }
 
 form {
-  padding: 30px;
+  display: flex;
+}
+
+.form-container {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
-  display: flex;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .instructions {
@@ -52,10 +63,41 @@ form {
   padding: 20px;
   margin-top: 20px;
   line-height: 2;
-
   border-left: 3px solid #885df1;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  color: #361e71;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  font-size: 16px;
+  color: 544787;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* CSS Blink Animation */
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 13px;
